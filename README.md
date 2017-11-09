@@ -12,3 +12,8 @@
 + Updating the project.
 + Downloading & installing DirectX SDK.
 + Fixing the build errors.
+
+### SM02-b: Testing Steam Lobbies ###
++ Finding a testing partner.
++ Testing servers.
++ Testing lobbies.
