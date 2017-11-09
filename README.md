@@ -17,3 +17,10 @@
 + Finding a testing partner.
 + Testing servers.
 + Testing lobbies.
+
+### SM03: The Online Sub-System ###
+
++ Importing PuzzlePlatforms (Imported previously. Instead, reorganised file structure to coincide with tutorials).
++ Capabilities of Online Sub-Systems.
++ Including the OSS module.
++ Getting a pointer to the sub-system.
