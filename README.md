@@ -66,3 +66,10 @@
 + Setting a server list from GameInstance.
 + Clearing the previous list.
 + Requesting a refresh.
+
+### SM11: Selecting A Server ###
+
++ Using 'TOptional' values.
++ Setup the 'UServerRow'.
++ Adding a 'UButton'.
++ Set the selected index.

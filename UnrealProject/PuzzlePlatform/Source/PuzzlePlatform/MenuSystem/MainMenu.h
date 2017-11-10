@@ -19,6 +19,8 @@ public:
 
 	void SetServerList(TArray<FString> ServerNames);
 
+	void SelectIndex(uint32 Index);
+
 protected:
 	virtual bool Initialize();
 
@@ -66,4 +68,6 @@ private:
 	void QuitPressed();
 
 	TSubclassOf<class UUserWidget> ServerRowClass;
+
+	TOptional<uint32> SelectedIndex;
 };
