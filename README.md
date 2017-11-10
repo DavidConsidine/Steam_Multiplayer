@@ -47,3 +47,9 @@
 
 + 'FindSessions' and 'TShareRef'.
 + Handling 'OnFindSessionsCompleteDelegates'.
+
+### SM08: Query Parameters & Session Settings ###
+
++ Configuring Session Settings.
++ Adding query parameters.
++ Iterating over a 'TArray'. 
