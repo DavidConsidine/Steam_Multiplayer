@@ -25,8 +25,14 @@
 + Including the OSS module.
 + Getting a pointer to the sub-system.
 
-### SM03: NULL Sub-System For Testing ###
+### SM04: NULL Sub-System For Testing ###
 
 + Role of the NULL sub-system.
 + Configuring the NULL service.
 + Printing the current service name.
+
+### SM05: Creating Online Sessions ###
+
++ Creating a session.
++ Asynchronous operations and delegates.
++ Creating a session on host.

@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
+#include "OnlineSubsystem.h"
 #include "MenuSystem/MenuInterface.h"
 #include "PuzzlePlatformGameInstance.generated.h"
 
@@ -38,4 +39,8 @@ private:
 	TSubclassOf<class UUserWidget> MenuClass;
 	TSubclassOf<class UUserWidget> InGameMenuClass;
 	class UMainMenu* Menu;
+
+	IOnlineSessionPtr SessionInterface;
+	// On successfully creating a new server, call to enter hosted server
+	void OnCreateSessionComplete(FName SessionName, bool Success);
 };
