@@ -59,3 +59,10 @@
 + Introduction to the 'ScrollBox'.
 + Creating a row widget.
 + Add rows in C++.
+
+### SM10: Populating The Server List ###
+
++ Expose the text property.
++ Setting a server list from GameInstance.
++ Clearing the previous list.
++ Requesting a refresh.
