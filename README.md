@@ -53,3 +53,9 @@
 + Configuring Session Settings.
 + Adding query parameters.
 + Iterating over a 'TArray'. 
+
+### SM09: Lists Of Widgets With ScrollBox ###
+
++ Introduction to the 'ScrollBox'.
++ Creating a row widget.
++ Add rows in C++.
