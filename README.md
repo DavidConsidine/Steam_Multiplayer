@@ -36,3 +36,9 @@
 + Creating a session.
 + Asynchronous operations and delegates.
 + Creating a session on host.
+
+### SM06: Destroying Online Sessions ###
+
++ Asynchronous destruction.
++ Checking if a session exists.
++ Destroy the session if we need to.

@@ -41,6 +41,8 @@ private:
 	class UMainMenu* Menu;
 
 	IOnlineSessionPtr SessionInterface;
-	// On successfully creating a new server, call to enter hosted server
+	
+	void CreateSession();
 	void OnCreateSessionComplete(FName SessionName, bool Success);
+	void OnDestroySessionComplete(FName SessionName, bool Success);
 };
