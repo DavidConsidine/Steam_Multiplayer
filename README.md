@@ -42,3 +42,8 @@
 + Asynchronous destruction.
 + Checking if a session exists.
 + Destroy the session if we need to.
+
+### SM07: Finding Online Sessions ###
+
++ 'FindSessions' and 'TShareRef'.
++ Handling 'OnFindSessionsCompleteDelegates'.

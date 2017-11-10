@@ -43,6 +43,14 @@ void UPuzzlePlatformGameInstance::Init()
 		{
 			SessionInterface->OnCreateSessionCompleteDelegates.AddUObject(this, &UPuzzlePlatformGameInstance::OnCreateSessionComplete);
 			SessionInterface->OnDestroySessionCompleteDelegates.AddUObject(this, &UPuzzlePlatformGameInstance::OnDestroySessionComplete);
+			SessionInterface->OnFindSessionsCompleteDelegates.AddUObject(this, &UPuzzlePlatformGameInstance::OnFindSessionsComplete);
+
+			SessionSearch = MakeShareable(new FOnlineSessionSearch());
+			if (SessionSearch.IsValid())
+			{
+				UE_LOG(LogTemp, Warning, TEXT("Starting Find Session"))
+				SessionInterface->FindSessions(0, SessionSearch.ToSharedRef());
+			}
 		}
 	}
 	else
@@ -149,6 +157,11 @@ void UPuzzlePlatformGameInstance::OnDestroySessionComplete(FName SessionName, bo
 	{
 		void CreateSession();
 	}
+}
+
+void UPuzzlePlatformGameInstance::OnFindSessionsComplete(bool Success)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Finished Find Session"))
 }
 
 void UPuzzlePlatformGameInstance::Join(const FString& Address)
