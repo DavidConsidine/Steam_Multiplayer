@@ -73,3 +73,10 @@
 + Setup the 'UServerRow'.
 + Adding a 'UButton'.
 + Set the selected index.
+
+### SM12: Joining A Session ###
+
++ Passing the index to 'GameInstance'.
++ How to 'JoinSession'.
++ Handling 'OnJoinSessionComplete'.
++ Getting the platform connect string.

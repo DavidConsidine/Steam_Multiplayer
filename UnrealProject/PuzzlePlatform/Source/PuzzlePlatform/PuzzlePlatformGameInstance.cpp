@@ -6,7 +6,6 @@
 #include "UObject/ConstructorHelpers.h"
 #include "Blueprint/UserWidget.h"
 #include "OnlineSessionSettings.h"
-#include "OnlineSessionInterface.h"
 
 #include "MenuSystem/MainMenu.h"
 #include "MenuSystem/MenuWidget.h"
@@ -44,6 +43,7 @@ void UPuzzlePlatformGameInstance::Init()
 			SessionInterface->OnCreateSessionCompleteDelegates.AddUObject(this, &UPuzzlePlatformGameInstance::OnCreateSessionComplete);
 			SessionInterface->OnDestroySessionCompleteDelegates.AddUObject(this, &UPuzzlePlatformGameInstance::OnDestroySessionComplete);
 			SessionInterface->OnFindSessionsCompleteDelegates.AddUObject(this, &UPuzzlePlatformGameInstance::OnFindSessionsComplete);
+			SessionInterface->OnJoinSessionCompleteDelegates.AddUObject(this, &UPuzzlePlatformGameInstance::OnJoinSessionComplete);
 		}
 	}
 	else
@@ -173,15 +173,18 @@ void UPuzzlePlatformGameInstance::OnFindSessionsComplete(bool Success)
 	
 }
 
-void UPuzzlePlatformGameInstance::Join(const FString& Address)
+void UPuzzlePlatformGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result)
 {
-	if (Menu != nullptr)
+	if (!SessionInterface.IsValid()) return;
+
+	FString Address;
+	if (!SessionInterface->GetResolvedConnectString(SessionName, Address))
 	{
-		Menu->SetServerList({"test1", "test2"});
-		/*Menu->Teardown();*/
+		UE_LOG(LogTemp, Warning, TEXT("Could not get connect string"))
+		return;
 	}
 
-	/*UEngine* Engine = GetEngine();
+	UEngine* Engine = GetEngine();
 	if (!ensure(Engine != nullptr))
 	{
 		return;
@@ -194,7 +197,26 @@ void UPuzzlePlatformGameInstance::Join(const FString& Address)
 	{
 		return;
 	}
-	PlayerController->ClientTravel(Address, ETravelType::TRAVEL_Absolute);*/
+	PlayerController->ClientTravel(Address, ETravelType::TRAVEL_Absolute);
+}
+
+
+void UPuzzlePlatformGameInstance::Join(uint32 Index)
+{
+	if (!SessionInterface.IsValid())
+	{
+		return;
+	}
+	if (!SessionSearch.IsValid())
+	{
+		return;
+	}
+	if (Menu != nullptr)
+	{
+		Menu->Teardown();
+	}
+
+	SessionInterface->JoinSession(0, SESSION_NAME, SessionSearch->SearchResults[Index]);
 }
 
 void UPuzzlePlatformGameInstance::LoadMainMenu()
