@@ -80,3 +80,10 @@
 + How to 'JoinSession'.
 + Handling 'OnJoinSessionComplete'.
 + Getting the platform connect string.
+
+### SM13: Enabling The Steam OSS ###
+
++ Enabling the steam plugin.
++ Compiling with the steam module.
++ Configuring the 'DefaultEngine.ini'.
++ Reading the verbose logs.
