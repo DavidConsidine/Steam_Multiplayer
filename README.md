@@ -87,3 +87,9 @@
 + Compiling with the steam module.
 + Configuring the 'DefaultEngine.ini'.
 + Reading the verbose logs.
+
+### SM14: "Presence" For Steam Lobbies ###
+
++ Enabling presence for the server.
++ Enabling presence for search.
++ Debugging our connection.
