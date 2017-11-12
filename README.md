@@ -93,3 +93,9 @@
 + Enabling presence for the server.
 + Enabling presence for search.
 + Debugging our connection.
+
+### SM15: Row Selection In Lists ###
+
++ Update text colour on hover.
++ Update all rows when 'Selected'.
++ Select colours for 'Hovered' and 'Selected'.
