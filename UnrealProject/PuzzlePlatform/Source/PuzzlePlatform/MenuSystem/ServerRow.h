@@ -18,6 +18,13 @@ public:
 	UPROPERTY(meta = (BindWidget))
 	class UTextBlock* ServerName;
 	
+	UPROPERTY(meta = (BindWidget))
+	class UTextBlock* ConnectionFraction;
+
+	UPROPERTY(meta = (BindWidget))
+	class UTextBlock* HostUser;
+
+
 	void Setup(class UMainMenu* Parent, uint32 Index);
 
 	UPROPERTY(BlueprintReadOnly)

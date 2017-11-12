@@ -99,3 +99,10 @@
 + Update text colour on hover.
 + Update all rows when 'Selected'.
 + Select colours for 'Hovered' and 'Selected'.
+
+### SM16: Displaying Search Result Properties ###
+
++ Disabling Steam for testing.
++ Creating a struct.
++ Populating a struct.
++ Updating the UI.
