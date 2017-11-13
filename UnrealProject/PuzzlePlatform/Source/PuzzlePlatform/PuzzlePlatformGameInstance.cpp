@@ -150,7 +150,7 @@ void UPuzzlePlatformGameInstance::OnCreateSessionComplete(FName SessionName, boo
 	{
 		return;
 	}
-	World->ServerTravel("/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap?listen");
+	World->ServerTravel("/Game/PuzzlePlatform/Maps/Lobby?listen");
 
 	UE_LOG(LogTemp, Warning, TEXT("Joined Server %s"), *SessionName.ToString())
 }

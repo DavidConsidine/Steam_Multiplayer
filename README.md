@@ -122,3 +122,10 @@
 ### SM18: Continued: Custom Session Settings ###
 
 + Setting the server name.
+
+### SM19: GameMode And Multiplayer ###
+
++ Joining into the lobby.
++ Creating a GameMode override.
++ Handling 'PostLogin'.
++ Handle 'Logout' and count players.
