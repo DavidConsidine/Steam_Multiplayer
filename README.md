@@ -106,3 +106,9 @@
 + Creating a struct.
 + Populating a struct.
 + Updating the UI.
+
+### SM17: Debugging the Search Results ###
+
++ Disabling Steam fully.
++ Getting the available connections.
++ Padding the text properly.
