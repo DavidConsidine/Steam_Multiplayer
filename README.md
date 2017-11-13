@@ -129,3 +129,12 @@
 + Creating a GameMode override.
 + Handling 'PostLogin'.
 + Handle 'Logout' and count players.
+
+### SM20: Enabling Seamless Travel ###
+
++ Ensuring we call 'Super'.
++ Traveling to the game.
++ What is non-seamless travel?
++ Enabling seamless travel.
++ The transition map.
+
