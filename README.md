@@ -138,3 +138,10 @@
 + Enabling seamless travel.
 + The transition map.
 
+### SM21: Debugging Engine Code ###
+
++ Installing editor symbols.
++ Finding the NULL subsystem code.
++ What code should be called?
++ Attaching and debugging.
++ Fixing the NULL subsystem bug.
