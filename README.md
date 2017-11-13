@@ -118,3 +118,7 @@
 + How to set custom settings.
 + how to retrieve custom settings.
 + Setting the server name.
+
+### SM18: Continued: Custom Session Settings ###
+
++ Setting the server name.
