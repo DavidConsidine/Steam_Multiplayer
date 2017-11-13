@@ -112,3 +112,9 @@
 + Disabling Steam fully.
 + Getting the available connections.
 + Padding the text properly.
+
+### SM17: Custom Session Settings ###
+
++ How to set custom settings.
++ how to retrieve custom settings.
++ Setting the server name.
