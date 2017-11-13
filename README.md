@@ -145,3 +145,9 @@
 + What code should be called?
 + Attaching and debugging.
 + Fixing the NULL subsystem bug.
+
+### SM22: Starting A Session ###
+
++ Update Maximum number of players.
++ Addind a session start timeout.
++ Starting the session.
